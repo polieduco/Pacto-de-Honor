@@ -11,6 +11,11 @@ var Mundo1 = {
         game.load.spritesheet('nivel3', '../img/componentes/navegacionMapa/nivel3.png', 192,71);
         game.load.spritesheet('nivel4', '../img/componentes/navegacionMapa/nivel4.png', 192,71);
         game.load.spritesheet('nivel5', '../img/componentes/navegacionMapa/nivel5.png', 192,71);
+        game.load.spritesheet('nivel1b', '../img/componentes/navegacionMapa/nivel1b.png', 192,71);
+        game.load.spritesheet('nivel2b', '../img/componentes/navegacionMapa/nivel2b.png', 192,71);
+        game.load.spritesheet('nivel3b', '../img/componentes/navegacionMapa/nivel3b.png', 192,71);
+        game.load.spritesheet('nivel4b', '../img/componentes/navegacionMapa/nivel4b.png', 192,71);
+        game.load.spritesheet('nivel5b', '../img/componentes/navegacionMapa/nivel5b.png', 192,71);
     },
 
     create:function(){
@@ -32,6 +37,7 @@ var Mundo1 = {
         popup2.addChild(closeButton2);
 
         //se crean los 5 botones que son los que sirven para elegir nivel
+        if()
         var nivelButton = game.add.button (180, -250, 'nivel1', iniciarNivel1, null, 2, 1, 0);
         function iniciarNivel1(){
             navegacion.prototype.iniciarNivel("1-1");
